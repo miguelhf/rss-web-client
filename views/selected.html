@@ -1,0 +1,15 @@
+<div class="panel panel-primary">
+	<div class="panel-heading ">
+		{{article.title}}
+		<div style="float:right">
+			<button style="background-color: #337ab7" ng-click="previous()" class="btn" ng-disabled="!items.has_previous()"" alt="Previous entry"><i class="glyphicon glyphicon-chevron-left"></i></button>
+			<button class="btn" ng-class="{'glyphicon glyphicon-star': article.faved, 'glyphicon glyphicon-star-empty': !article.faved}" style="background-color: #337ab7; color: yellow" ng-click="toggle_fav()"  alt="Toggle favorite"></button> 
+			<button style="background-color: #337ab7" ng-click="next()" class="btn" ng-disabled="!items.has_next()" alt="Next entry"><i class="glyphicon glyphicon-chevron-right"></i></button>
+		</div>
+	</div>
+	<div class="panel-body">
+		<p>{{article.author}}</p>
+		<div class="content" ng-bind-html="article.summary"></div>
+		<span class="badge" style="float:right; background-color:#337ab7" ng-click="toggle_read()">mark as {{toggle_state}}</span>
+	</div>
+</div>

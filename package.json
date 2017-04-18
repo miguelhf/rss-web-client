@@ -1,0 +1,36 @@
+{
+  "name": "rss-client",
+  "version": "1.0.0",
+  "description": "RSSFeed reader: multiplatform RSS feed reader using Cordova and AngularJS.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelhf/rss-client.git"
+  },
+  "keywords": [
+    "rss",
+    "feed",
+    "reader",
+    "angularjs",
+    "cordova"
+  ],
+  "author": "Miguel Hernaiz",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/miguelhf/rss-client/issues"
+  },
+  "homepage": "https://github.com/miguelhf/rss-client#readme",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-resource": "^1.6.3",
+    "angular-route": "^1.6.3",
+    "angular-sanitize": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "cordova": "^6.5.0",
+    "jquery": "^3.2.1",
+    "ngstorage": "^0.3.11"
+  }
+}

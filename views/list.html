@@ -1,0 +1,27 @@
+<div>
+	<section class="controls no-select">
+		<div class="tControls">
+			<div class="middle">
+				<button ng-click="items.mark_all_as_read()" class="btn" title="Mark all as read" alt="Mark all as read">
+					<i class="glyphicon glyphicon-check"></i>
+				</button>
+				<button ng-click="refresh()" class="btn" title="Refresh feeds" alt="Refresh feeds">
+					<i class="glyphicon glyphicon-refresh"></i>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="panel panel-primary" ng-repeat="item in list track by item.id" ng-click="select_item($index)">
+		<div class="panel-heading">
+			<div>{{item.author}}</div>
+			<div id="fav">
+				<span ng-class="{'glyphicon glyphicon-star': item.faved, 'glyphicon glyphicon-star-empty': !item.faved}" style="color: yellow"></span> 
+			</div>
+		</div>
+		<div class="panel-body">
+			<div style="float:left">{{item.title}}</div>
+			<div style="float:right">{{item.date | date:'MM/dd/yyyy - h:mma'}}</div>
+		</div>
+	</div>
+</div>
